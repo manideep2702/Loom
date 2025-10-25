@@ -14,6 +14,5 @@ export const curriculum = [
   { week: 13, title: 'Chaos Sprint I', outcomes: ['Ops under pressure'], lab: 'Incident Response' },
   { week: 14, title: 'Chaos Sprint II', outcomes: ['Debugging', 'Runbooks'], lab: 'Postmortem' },
   { week: 15, title: 'Capstone Build', outcomes: ['Architecture', 'Delivery'], lab: 'MVP Beta' },
-  { week: 16, title: 'Capstone Polish & Demo Day', outcomes: ['Pitching'], lab: 'Industry Presentation' }
+  { week: 16, title: 'Capstone Polish & Demo Day', outcomes: [], lab: 'Industry Presentation' }
 ]
-

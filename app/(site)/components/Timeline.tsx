@@ -10,13 +10,15 @@ export default function Timeline() {
             <h4 className="font-semibold text-white">Week {w.week}: {w.title}</h4>
             <span className="hidden text-xs text-white/60 sm:block">Lab: {w.lab}</span>
           </div>
-          <div className="mt-2 hidden text-sm text-white/70 sm:block">
-            Outcomes: {w.outcomes.join(', ')}
-          </div>
+          {w.outcomes.length > 0 && (
+            <div className="mt-2 hidden text-sm text-white/70 sm:block">
+              Outcomes: {w.outcomes.join(', ')}
+            </div>
+          )}
           <details className="sm:hidden mt-2">
             <summary className="cursor-pointer text-sm text-white/80">Details</summary>
             <div className="mt-2 text-sm text-white/70">
-              Outcomes: {w.outcomes.join(', ')}<br/>
+              {w.outcomes.length > 0 && (<><span>Outcomes: {w.outcomes.join(', ')}</span><br/></>)}
               Lab: {w.lab}
             </div>
           </details>
