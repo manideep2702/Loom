@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="24" fill="#EEF2FF"/>
+  <g transform="translate(24,28)">
+    <path d="M0 64 L16 0 H32 L16 64 H0Z" fill="#6366F1"/>
+    <path d="M40 64 L56 0 H72 L56 64 H40Z" fill="#0EA5E9"/>
+    <circle cx="60" cy="64" r="6" fill="#111827"/>
+  </g>
+  <title>Loom Technologies</title>
+</svg>
+

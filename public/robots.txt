@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://loomtech.example
+
+# Sitemaps
+Sitemap: https://loomtech.example/sitemap.xml

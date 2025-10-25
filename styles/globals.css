@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base resets and focus styles */
+* { -webkit-tap-highlight-color: transparent; }
+html:focus-within { scroll-behavior: smooth; }
+html { color-scheme: dark; }
+body { @apply bg-black text-white antialiased; }
+
+/* Theme color tokens used by UI components (shadcn-style) */
+:root {
+  --background: 0 0% 0%; /* black */
+  --foreground: 0 0% 100%; /* white */
+
+  --card: 0 0% 7%;
+  --card-foreground: 0 0% 100%;
+
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 100%;
+
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 64%;
+
+  --accent: 0 0% 16%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 0 0% 18%;
+  --input: 0 0% 18%;
+  --ring: 0 0% 100%;
+}
+
+/* Ensure form controls inherit foreground color on dark backgrounds */
+input, textarea { color: hsl(var(--foreground)); }
+
+/* Accessible focus ring */
+:where(button, [href], input, select, textarea, [tabindex]) :focus-visible,
+:where(button, [href], input, select, textarea, [tabindex]).focus-visible,
+:where(button, [href], input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Smooth card hover */
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur transition hover:bg-white/10;
+}
+
+/* Gradients */
+.hero-gradient {
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(99,102,241,0.15), transparent),
+              radial-gradient(1000px 500px at 10% -10%, rgba(14,165,233,0.12), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* Utility to allow height transitions when paired with Tailwind duration/easing */
+.transition-height { transition-property: height; }
