@@ -17,7 +17,7 @@ export default function AboutPage() {
         {/* Hero */}
         <section className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
-            <img src="/images/logo.svg" alt="Loom Technologies" className="h-4 w-4" />
+            <img src="/images/LOGO.jpeg" alt="Loom Technologies" className="h-4 w-4 rounded" />
             <span>About Loom Technologies</span>
           </div>
           <h1 className="mt-5 text-balance text-4xl font-bold tracking-tight md:text-5xl">Transformation, not just certification</h1>

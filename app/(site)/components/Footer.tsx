@@ -9,7 +9,7 @@ export default function Footer() {
       <Container className="grid gap-8 py-10 md:grid-cols-3">
         <div className="space-y-2">
           <div className="flex items-center gap-2">
-            <img src="/images/logo.svg" alt="Loom Technologies" className="h-6 w-6" />
+            <img src="/images/LOGO.jpeg" alt="Loom Technologies" className="h-6 w-6 rounded" />
             <span className="font-semibold text-white">{siteConfig.name}</span>
           </div>
           <p className="text-sm text-white/70">{siteConfig.tagline}</p>

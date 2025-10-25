@@ -6,7 +6,7 @@ export function orgJsonLd() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: '/images/logo.svg',
+    logo: '/images/LOGO.jpeg',
     address: {
       '@type': 'PostalAddress',
       addressLocality: siteConfig.address.locality,
@@ -30,4 +30,3 @@ export function courseJsonLd() {
     }
   }
 }
-

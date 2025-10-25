@@ -24,7 +24,7 @@ export default function Header() {
       <Container className="flex h-16 items-center gap-3">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2" aria-label="Loom Technologies home">
-            <img src="/images/logo.svg" alt="Loom Technologies" className="h-8 w-8" />
+            <img src="/images/LOGO.jpeg" alt="Loom Technologies" className="h-8 w-8 rounded" />
             <span className="font-semibold text-white">Loom Technologies</span>
           </Link>
         </div>
